@@ -1,0 +1,13 @@
+ALERTA BARRIAL — archivos de trabajo para despliegue de prueba
+
+Archivos:
+- index.html
+- admin.html
+
+Ambos apuntan al proyecto Supabase jlmichcsxnbkrtxmxbpm y usan la clave publishable de cliente (no service_role).
+
+IMPORTANTE:
+- El botón “Continuar con Google” ya invoca Supabase OAuth y devuelve a la raíz del dominio actual (Vercel).
+- Para probar: verificar Google habilitado en Supabase Authentication, Site URL y Redirect URLs con https://alerta-barrial-cordoba.vercel.app y el callback de Supabase registrado en Google Cloud.
+- El panel admin actualmente usa email/contraseña de Supabase y verifica membresía admin; no es login Google.
+- Estos son archivos de trabajo para desplegar y probar OAuth. El flujo debe verificarse en el dominio publicado; todavía no se afirma que la autenticación en producción haya sido probada.
